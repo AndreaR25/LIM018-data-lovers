@@ -1,0 +1,360 @@
+#studiopage {
+    display: none;
+}
+
+#filmspage {
+    display: none;
+    background-image: url(images/osito.png);
+}
+
+#infoFilmsPage {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-image: url(images/corazon.png);
+
+}
+
+
+
+html {
+    width: auto;
+}
+
+body {
+    height: auto;
+    width: auto;
+    font-family: "Inter";
+    background-color: #C7E3E3;
+}
+
+.logo {
+    height: 85px;
+    width: 175px;
+}
+
+body {
+    height: auto;
+    width: auto;
+    font-family: "Inter";
+    background-color: #8eb2e9;
+}
+
+.buttons {
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-color: #FFFFFF;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: #4A7375;
+    font-family: "Inter";
+    font-style: normal;
+    font-size: 18px;
+    position: relative;
+    top: 20px;
+}
+
+#buttonsFather {
+    display: flex;
+    justify-content: space-around;
+}
+
+#background-window2 {
+    width: 1265px;
+    height: 550px;
+    position: relative;
+}
+
+#rectangle1 {
+    background-color: #FFFFFF;
+    opacity: 80%;
+    mix-blend-mode: normal;
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+}
+
+#studiopage {
+    background: #F5DDDD;
+    width: 1152px;
+    height: 592px;
+
+}
+
+h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-size: 16px;
+    color: #4A7375;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+h2 {
+    font-family: "Inter";
+    font-style: normal;
+    font-size: 20px;
+    color: #4A7375;
+    font-weight: 400;
+    text-align: center;
+}
+
+#buscador {
+    background: #C7E3E3;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #C7E3E3;
+    color: #4A7375;
+    width: 500px;
+    height: 25px;
+    font-family: "Inter";
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+::placeholder {
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-weight: 400;
+}
+
+#generalContainer {
+    display: flex;
+}
+
+#rectangle2 {
+    width: 280px;
+    
+    border-radius: 8px;
+    background-color: #C7E3E3;
+}
+
+.tittle {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    color: #4A7375;
+}
+
+.listProducer,
+.listDirector {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: #4A7375;
+}
+
+.separates {
+    width: 243px;
+    height: 2px;
+    background-color: #4A7375;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    cursor: pointer;
+}
+
+.filmPosterImages {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.filmImages {
+    padding: 20px;
+    width: 179px;
+    height: 246px;
+    cursor: pointer;
+}
+
+.characterImages {
+    padding: 20px;
+    width: 179px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.locationImages {
+    padding: 20px;
+    width: 179px;
+    height: 200px;
+    cursor: pointer;
+}
+
+#imagen2 {
+    padding-left: 17%;
+}
+
+#imgCharacter,#imgLocation {
+    width: 150px;
+    height: 180px;
+
+
+}
+
+
+
+#infoCharacterPage,#infoLocationPage{
+    margin-top: 10%;
+    margin-left: 35%;
+    display: none;
+
+
+    position: fixed;
+    align-items: center;
+    width: 500px;
+    text-align: center;
+    background: rgb(17, 169, 209);
+    background: linear-gradient(98deg, rgba(17, 169, 209, 1) 0%, rgba(196, 224, 230, 1) 47%, rgba(17, 169, 209, 1) 100%);
+    border-style: dotted;
+
+}
+
+#infoNameCharacter {
+    font-size: 30px;
+
+}
+
+#partLeftCharacterPage,#partLeftLocationPage{
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    
+
+
+}
+
+#partRigthCharacterPage,#partRigthLocationPage {
+    display: inline-block;
+    text-align: center;
+    padding: 5%;
+    width: 200px;
+    
+    margin-left: 4px;
+
+}
+
+#partRigthCharacterPage button {
+    background-color: #5b8fc0;
+    font-size: 20px;
+    color:antiquewhite;
+    border: 2px solid #17313a;
+
+    border-radius: 6px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    
+}
+
+#partRigthLocationPage button {
+    background-color: #5b8fc0;
+    font-size: 20px;
+    color:antiquewhite;
+    border: 2px solid #17313a;
+
+    border-radius: 6px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    
+}
+
+
+
+#partRigthCharacterPage button:hover{
+    background-color: #008CBA;
+    color: white;
+}
+
+#partRigthLocationPage button:hover{
+    background-color: #008CBA;
+    color: white;
+}
+
+#listCharacterImages{
+    background-color: rgba(201, 235, 232, 0.973);
+    align-items:center;
+    display: inline-block;
+    width: 50%;    
+    border-style: groove;
+    border-width: 20px;
+    border-bottom: red;
+    border-top: red;
+    border-color: #40cfe2;
+}
+
+#listCharacterImages img{
+    
+    display: inline-block;
+    flex-wrap: wrap;
+    margin: 10px;
+    cursor: pointer;
+    padding:0%;
+    border-width: 5px;
+    border-color: #b66ad4;
+    border-style: solid;
+}
+
+#descriptionFilm{
+   
+    background-color: rgb(162, 198, 233);
+    
+    border-style: groove;
+    border-width: 20px;
+    border-bottom: red;
+    border-color:  #40cfe2;
+    width:50%;
+    display: inline-block;
+}
+
+#listLocationImages{
+    
+    background-color: rgb(162, 198, 233);
+    border-style:groove;
+    border-width: 20px;
+    
+    border-top: red;
+    border-color: #40cfe2;
+   
+    width:50%;
+    display: inline-block;
+    
+}
+
+#btn-close-infofilmspage{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.infoFilmsPage h1{
+    color:red;
+    font-size: 30px;
+}
+
+#imgFilm{
+    width:200px;
+}
+
+#btn-viewall{
+    margin-left: 35%;
+    margin-bottom: 5%;
+}
+#img-lupa{
+    height: 30px;
+    margin-left:320px;
+    margin-top:20px;
+}

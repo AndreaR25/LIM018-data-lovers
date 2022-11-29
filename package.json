@@ -1,4 +1,5 @@
 {
+
   "name": "data-lovers",
   "version": "1.0.0",
   "main": "src/index.html",
@@ -19,12 +20,31 @@
     "eslint": "^8.3.0",
     "gh-pages": "^3.1.0",
     "htmlhint": "^1.0.0",
-    "jest": "^27.0.1",
     "opener": "^1.5.1",
     "serve": "^13.0.2"
   },
   "engines": {
     "node": ">=14.x"
-  }
+  },
+  "description": "## Índice",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreaR25/LIM018-data-lovers.git"
+  },
+  "keywords": [
+    "jet",
+    "testing"
+  ],
+  "author": "Andrea Reyes",
+  "bugs": {
+    "url": "https://github.com/AndreaR25/LIM018-data-lovers/issues"
+  },
+  "homepage": "https://github.com/AndreaR25/LIM018-data-lovers#readme"
 }
 

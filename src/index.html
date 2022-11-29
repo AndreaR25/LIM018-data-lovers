@@ -1,12 +1,157 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <img src="images/logo-studio.png" id="imagen1" class="logo" alt="Logo Studio Ghibli">
+  </header>
+
+  <nav>
+  </nav>
+
+  <main>
+    <div id="homepage">
+      <img src="images/ventana-1.png" id="imagen2" alt="Imagen con personajes de las películas del Studio Ghibli">
+      <div id="buttonsFather">
+        <input type="button" id="firstbutton" class="buttons" value="About Studio">
+        <input type="button" id="secondbutton" class="buttons" value="Films">
+        <input type="button" id="thirdbutton" class="buttons" value="Statistics">
+      </div>
+    </div>
+
+    <div id="studiopage">
+      <img src="images/background-image.jpeg" id="background-window2"
+        alt="Imagen con personajes de las películas del Studio Ghibli">
+
+      <div id="rectangle1">
+        <h1>About Studio</h1>
+        <br>
+        <h2>Studio Ghibli Inc. is a Japanese animation film studio headquartered in Koganei, Tokyo. It is best known for
+          its animated feature films, and has also produced several short subjects, television commercials, and two
+          television films. Its mascot and most recognizable symbol is a character named Totoro, a giant catlike spirit
+          from the 1988 anime film My Neighbor Totoro. Among the studio's highest-grossing films are Spirited Away
+          (2001), Howl's Moving Castle (2004) and Ponyo (2008). The studio was founded on June 15, 1985, by directors
+          Hayao Miyazaki and Isao Takahata and producer Toshio Suzuki, after the successful performance of Topcraft's
+          Nausicaä of the Valley of the Wind (1984). It has also collaborated with video game studios on the visual
+          development of several games.</h2>
+      </div>
+    </div>
+
+    <div id="filmspage">
+      <img src="images/Lupa.png" id="img-lupa">
+      <input type="text" placeholder="Search" id="buscador">
+      <select id="ordertitle" class="ordertitle">
+      <option value="orderCero">Ordenar</option>  
+      <option value="orderAZ">A-Z</option>
+      <option value="orderZA">Z-A</option>
+      </select>
+      <div id="generalContainer">
+        <div id="filterList">
+          <div id="rectangle2">
+
+            <ul id="listDirector" class="tittle"><b>Director</b>
+              <li value="0" class="listDirect">Hayao Miyazaki</li>
+              <li value="1" class="listDirect">Isao Takahata</li>
+              <li value="2" class="listDirect">Yoshifumi Kondō</li>
+              <li value="3" class="listDirect">Hiroyuki Morita</li>
+              <li value="4" class="listDirect">Gorō Miyazaki</li>
+              <li value="5" class="listDirect">Hiromasa Yonebayashi</li>
+            </ul>
+
+            <div id="separate2" class="separates"></div>
+
+            <ul id="listProducer" class="tittle"><b>Producer</b>
+              <li value="0" class="listProduc">Isao Takahata</li>
+              <li value="1" class="listProduc">Hayao Miyazaki</li>
+              <li value="2" class="listProduc">Toru Hara</li>
+              <li value="3" class="listProduc">Toshio Suzuki</li>
+              <li value="4" class="listProduc">Yoshiaki Nishimura</li>
+            </ul>
+            <button type="button" id="btn-viewall"> VIEW ALL</button>
+          </div>
+
+        </div>
+
+
+
+        <div id="filmPosterImages" class="filmPosterImages"></div>
+      </div>
+    </div>
+
+    <div id="infoFilmsPage" class="infoFilmsPage">
+      <div id="descriptionFilm">
+        <h1 id="title">Titulo: <span id="infoTitle"></span></h1>
+        <img id="imgFilm">
+        <h2 id="description">Descripcion: <span id="infoDescription"></span></h2>
+        <h2 id="director">Director: <span id="infoDirector"></span></h2>
+        <h2 id="producer">Productor: <span id="infoProducer"></span></h2>
+        <h2 id="releaseDate">Año: <span id="infoReleaseDate"></span></h2>
+        <h2 id="rtScore">Score: <span id="infoRtScorte"></span></h2>
+      </div>
+      <div id="listCharacterImages">
+        <h1 id="titleP">Personajes:</h1>
+      </div>
+
+      <div id="listLocationImages">
+        <h1 id="titleL">Lugares:</h1>
+      </div><br>
+      <button type="button" id="btn-close-infofilmspage">back</button>
+
+    </div>
+
+    <div id="infoCharacterPage" class="infoCharacterPage">
+      <div id="partLeftCharacterPage">
+        <h1 id="nameCharacter">Nombre: <span id="infoNameCharacter"></span></h1>
+        <img id="imgCharacter">
+      </div>
+      <div id="partRigthCharacterPage">
+        <h2 id="gender">Gender: <span id="infoGenderCharacter"></span></h2>
+        <h2 id="age">Age: <span id="infoAgeCharacter"></span></h2>
+        <h2 id="eye-color">Eye Color: <span id="infoEyeColorCharacter"></span></h2>
+        <h2 id="hair-color">Hair Color: <span id="infoHairColorCharacter"></span></h2>
+        <h2 id="specie">Specie: <span id="infoSpecieCharacter"></span></h2>
+        <button type="button" id="btn-close-infocharacter">Close</button>
+      </div>
+
+    </div>
+
+    <div id="infoLocationPage" class="infoLocationPage">
+      <div id="partLeftLocationPage">
+        <h1 id="nameLocation">Nombre: <span id="infoNameLocation"></span></h1>
+        <img id="imgLocation">
+      </div>
+      <div id="partRigthLocationPage">
+        <h2 id="climate">Climate: <span id="infoClimateLocation"></span></h2>
+        <h2 id="terrain">Terrain: <span id="infoTerrainLocation"></span></h2>
+        <h2 id="surface_water">Surface Water: <span id="infoSurfaceWaterLocation"></span></h2>
+        <button type="button" id="btn-close-infolocation">Close</button>
+      </div>
+      <!-- "name": "Gondoa",
+      "img": "https://static.wikia.nocookie.net/studio-ghibli/images/2/25/Thumbnail-8.jpeg",
+      "climate": "TODO",
+      "terrain": "TODO",
+      "surface_water": "40",
+      "residents": [
+        "TODO" -->
+    </div>
+
+
     <script src="main.js" type="module"></script>
-  </body>
+
+
+  </main>
+  <footer></footer>
+
+
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
